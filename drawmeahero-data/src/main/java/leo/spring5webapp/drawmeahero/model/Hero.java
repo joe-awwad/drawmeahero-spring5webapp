@@ -2,7 +2,7 @@ package leo.spring5webapp.drawmeahero.model;
 
 import java.util.Set;
 
-public class Hero {
+public class Hero extends BaseEntity {
 
     private String name;
 

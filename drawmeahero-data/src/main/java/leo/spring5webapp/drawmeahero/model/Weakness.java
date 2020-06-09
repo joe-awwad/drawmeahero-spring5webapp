@@ -1,9 +1,9 @@
 package leo.spring5webapp.drawmeahero.model;
 
-public class Weakness {
+public class Weakness extends BaseEntity {
 
     private String name;
-    
+
     public String getName() {
         return name;
     }

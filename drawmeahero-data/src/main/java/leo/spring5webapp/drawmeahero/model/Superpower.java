@@ -1,6 +1,6 @@
 package leo.spring5webapp.drawmeahero.model;
 
-public class Superpower {
+public class Superpower extends BaseEntity {
 
     private String name;
 
