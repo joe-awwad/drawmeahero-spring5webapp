@@ -4,11 +4,25 @@ import java.util.Set;
 
 public class Hero extends BaseEntity {
 
+    private Person person;
+
     private String name;
 
     private Set<Superpower> superpowers;
 
     private Set<Weakness> weaknesses;
+
+    private SideKick sideKick;
+
+    private Hero nemesis;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 
     public String getName() {
         return name;
@@ -32,5 +46,21 @@ public class Hero extends BaseEntity {
 
     public void setWeaknesses(Set<Weakness> weaknesses) {
         this.weaknesses = weaknesses;
+    }
+
+    public SideKick getSideKick() {
+        return sideKick;
+    }
+
+    public void setSideKick(SideKick sideKick) {
+        this.sideKick = sideKick;
+    }
+
+    public Hero getNemesis() {
+        return nemesis;
+    }
+
+    public void setNemesis(Hero nemesis) {
+        this.nemesis = nemesis;
     }
 }
