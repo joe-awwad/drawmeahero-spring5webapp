@@ -1,0 +1,12 @@
+spring:
+  banner:
+    image:
+      width: 20
+      height: 20
+
+dmah:
+  artist:
+    first-name: ingrid
+    last-name: el hayek
+    email: inrid.el.hayek@gmail.com
+
