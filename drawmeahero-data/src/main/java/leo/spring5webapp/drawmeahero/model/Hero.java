@@ -4,8 +4,6 @@ import java.util.Set;
 
 public class Hero extends BaseEntity {
 
-    private Person person;
-
     private String name;
 
     private Set<Superpower> superpowers;
@@ -15,14 +13,6 @@ public class Hero extends BaseEntity {
     private SideKick sideKick;
 
     private Hero nemesis;
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
 
     public String getName() {
         return name;
