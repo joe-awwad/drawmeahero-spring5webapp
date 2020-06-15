@@ -1,6 +1,6 @@
 package leo.spring5webapp.drawmeahero.model;
 
-import java.util.List;
+import java.util.Set;
 
 public class HeroOrder extends BaseEntity {
 
@@ -10,21 +10,19 @@ public class HeroOrder extends BaseEntity {
 
     private String requesteeName;
 
-    private List<Like> likes;
+    private Set<String> likes;
 
-    private List<Dislike> dislikes;
+    private Set<String> dislikes;
 
-    private List<Quality> qualities;
+    private Set<String> qualities;
 
-    private List<Habit> habits;
+    private Set<String> habits;
 
-    private List<FavoriteColor> favoriteColors;
+    private Set<String> favoriteColors;
 
-    private boolean withNemesis;
+    private HeroFeatures features;
 
-    private boolean withOriginStory;
-
-    private Hero hero;
+    private Set<String> products;
 
     public Requester getRequester() {
         return requester;
@@ -50,67 +48,59 @@ public class HeroOrder extends BaseEntity {
         this.requesteeName = requesteeName;
     }
 
-    public List<Like> getLikes() {
+    public Set<String> getLikes() {
         return likes;
     }
 
-    public void setLikes(List<Like> likes) {
+    public void setLikes(Set<String> likes) {
         this.likes = likes;
     }
 
-    public List<Dislike> getDislikes() {
+    public Set<String> getDislikes() {
         return dislikes;
     }
 
-    public void setDislikes(List<Dislike> dislikes) {
+    public void setDislikes(Set<String> dislikes) {
         this.dislikes = dislikes;
     }
 
-    public List<Quality> getQualities() {
+    public Set<String> getQualities() {
         return qualities;
     }
 
-    public void setQualities(List<Quality> qualities) {
+    public void setQualities(Set<String> qualities) {
         this.qualities = qualities;
     }
 
-    public List<Habit> getHabits() {
+    public Set<String> getHabits() {
         return habits;
     }
 
-    public void setHabits(List<Habit> habits) {
+    public void setHabits(Set<String> habits) {
         this.habits = habits;
     }
 
-    public List<FavoriteColor> getFavoriteColors() {
+    public Set<String> getFavoriteColors() {
         return favoriteColors;
     }
 
-    public void setFavoriteColors(List<FavoriteColor> favoriteColors) {
+    public void setFavoriteColors(Set<String> favoriteColors) {
         this.favoriteColors = favoriteColors;
     }
 
-    public boolean isWithNemesis() {
-        return withNemesis;
+    public HeroFeatures getFeatures() {
+        return features;
     }
 
-    public void setWithNemesis(boolean withNemesis) {
-        this.withNemesis = withNemesis;
+    public void setFeatures(HeroFeatures features) {
+        this.features = features;
     }
 
-    public boolean isWithOriginStory() {
-        return withOriginStory;
+    public Set<String> getProducts() {
+        return products;
     }
 
-    public void setWithOriginStory(boolean withOriginStory) {
-        this.withOriginStory = withOriginStory;
-    }
-
-    public Hero getHero() {
-        return hero;
-    }
-
-    public void setHero(Hero hero) {
-        this.hero = hero;
+    public void setProducts(Set<String> products) {
+        this.products = products;
     }
 }

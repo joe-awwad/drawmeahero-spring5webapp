@@ -6,9 +6,9 @@ public class Hero extends BaseEntity {
 
     private String name;
 
-    private Set<Superpower> superpowers;
+    private Set<String> superpowers;
 
-    private Set<Weakness> weaknesses;
+    private Set<String> weaknesses;
 
     private SideKick sideKick;
 
@@ -22,19 +22,19 @@ public class Hero extends BaseEntity {
         this.name = name;
     }
 
-    public Set<Superpower> getSuperpowers() {
+    public Set<String> getSuperpowers() {
         return superpowers;
     }
 
-    public void setSuperpowers(Set<Superpower> superpowers) {
+    public void setSuperpowers(Set<String> superpowers) {
         this.superpowers = superpowers;
     }
 
-    public Set<Weakness> getWeaknesses() {
+    public Set<String> getWeaknesses() {
         return weaknesses;
     }
 
-    public void setWeaknesses(Set<Weakness> weaknesses) {
+    public void setWeaknesses(Set<String> weaknesses) {
         this.weaknesses = weaknesses;
     }
 
