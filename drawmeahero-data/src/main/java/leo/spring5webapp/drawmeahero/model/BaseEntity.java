@@ -1,18 +1,24 @@
 package leo.spring5webapp.drawmeahero.model;
 
+import lombok.Data;
+
+import java.util.Objects;
+
+@Data
 public class BaseEntity {
 
     private Long id;
 
-    public Long getId() {
-        return id;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        BaseEntity that = (BaseEntity) o;
+        return Objects.equals(id, that.id);
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public boolean isNew() {
-        return this.id == null;
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
