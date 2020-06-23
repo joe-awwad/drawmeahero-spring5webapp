@@ -1,13 +1,15 @@
 package leo.spring5webapp.drawmeahero.model;
 
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
 import java.util.Objects;
 
 @Data
 public class BaseEntity {
 
-    private Long id;
+    @Id
+    private String id;
 
     @Override
     public boolean equals(Object o) {

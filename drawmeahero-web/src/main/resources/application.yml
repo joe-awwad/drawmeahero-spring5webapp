@@ -3,6 +3,14 @@ spring:
     image:
       width: 20
       height: 20
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+      enabled: true
+  data:
+    mongodb:
+      database: dmah
 
 dmah:
   artist:
